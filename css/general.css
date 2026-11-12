@@ -52,6 +52,26 @@ Bold: 700
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 
+---general button:
+.btn {
+  display: inline-block;
+  padding: 15px 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  /* border-radius: 50px; 
+
+  text-decoration: none;
+  border: solid #000;
+  /* border-radius: rem; 
+  font-size: px or rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  /* box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25); 
+}
+
+
 */
 
 * {
@@ -123,24 +143,27 @@ make changes in the blank areas (btn) */
 .btn {
   display: inline-block;
   padding: 15px 50px;
-  background-color: oklch(55.5% 0.163 48.998);
+  background-color: transparent;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 
   text-decoration: none;
-  border: solid #000;
-  border-radius: rem;
+  border: none;
+  border-bottom: 2px solid #fff;
+
+  /* border-radius: rem; */
   font-size: px or rem;
   cursor: pointer;
   transition: all 0.5s;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25); */
 }
 
 .btn:hover {
-  background-color: #000;
-  border: solid #fff;
+  border-bottom-color: #000; /* example: change the underline color on hover */
+
+  /* border: solid #fff; */
   opacity: 1;
 }
 
