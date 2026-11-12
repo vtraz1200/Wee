@@ -1,0 +1,149 @@
+/*
+
+
+--- 01 TYPOGRAPHY SYSTEM
+
+
+
+
+
+
+-FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+- Font weights
+Default: 400
+Semi-bold: 600
+Bold: 700
+
+
+
+
+- Line heights
+
+
+- Letter spacing
+
+
+--- 02 COLORS
+
+
+-Primary:oklch(48.8% 0.243 264.376)
+-Tints:  
+-Shades:oklch(54.6% 0.245 262.881), oklch(62.3% 0.214 259.815), oklch(70.7% 0.165 254.624)
+-Accents:
+-Greys:
+-Others:
+
+-secondary: oklch(55.5% 0.163 48.998)
+
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+
+
+--- 07 WHITESPACE
+
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* max-width: 1280px; */
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #343a40;
+}
+
+/*******************************************/
+/* GENERAL REUSABLE COMPONENTS */
+/*******************************************/
+.container {
+  max-width: 100rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.font-white {
+  color: #fff;
+}
+
+.h1-font-size {
+  font-size: 62px;
+  font-weight: 700;
+}
+
+.p-heading-font-size {
+  font-size: 22px;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Typical Button Design,
+make changes in the blank areas (btn) */
+
+.section-hero-btns {
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: oklch(55.5% 0.163 48.998);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50px;
+
+  text-decoration: none;
+  border: solid #000;
+  border-radius: rem;
+  font-size: px or rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+  background-color: #000;
+  border: solid #fff;
+  opacity: 1;
+}
+
+.btn-block {
+  margin: auto;
+  width: 50%;
+}

@@ -1,14 +1,28 @@
-/* Colors: 
+.section-hero {
+  background-color: oklch(42.4% 0.199 265.638); /* full-width blue */
+  padding: 64px;
+}
 
+.hero {
+  max-width: 1300px;
+  margin: 0 auto; /* centered content */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
 
-*/
+.hero-img {
+  width: 400px;
+  height: 450px;
+  border-radius: 10%;
+  justify-self: center;
+}
 
-/* Default settings */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth !important;
-  /* background-color: #f2f2f2; */
+.section-hero-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
 }
