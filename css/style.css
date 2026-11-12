@@ -3,9 +3,27 @@
   padding: 64px;
 }
 
+/* AI assisted Code ------------------------------------------------------- */
+.section-hero {
+  position: relative; /* lets the wave sit at the section's bottom */
+  padding-bottom: 160px; /* room so the wave doesn't cover your content */
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* taller = deeper waves */
+  fill: #fff; /* match the background of the section below */
+  display: block;
+}
+
+/* AI assisted Code end ------------------------------------------------------- */
+
 .hero {
   max-width: 1300px;
-  margin: 0 auto; /* centered content */
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -14,8 +32,9 @@
 .hero-img {
   width: 400px;
   height: 450px;
-  border-radius: 10%;
+  border-radius: 5%;
   justify-self: center;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 .section-hero-one {
@@ -24,5 +43,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 32px;
+  gap: 16px;
+  padding: 48px;
+  border: solid 2px #fff;
+  border-radius: 50px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
 }
