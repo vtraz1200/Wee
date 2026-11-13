@@ -41,6 +41,8 @@ Bold: 700
 
 --- 05 SHADOWS
 
+  -box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25); 
+
 
 --- 06 BORDER-RADIUS
 
@@ -95,6 +97,7 @@ body {
 .container {
   max-width: 100rem;
   padding: 0 3.2rem;
+  padding-bottom: 4rem; /*Added this to give container room at the bottom*/
   margin: 0 auto;
   overflow: hidden;
 }
