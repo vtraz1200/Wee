@@ -1,3 +1,5 @@
+/* ***************************************Hero Section************************************** */
+
 .section-hero {
   background-color: oklch(42.4% 0.199 265.638); /* full-width blue */
   padding: 64px;
@@ -29,14 +31,6 @@
   align-items: center;
 }
 
-.hero-img {
-  width: 400px;
-  height: 450px;
-  border-radius: 5%;
-  justify-self: center;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
-}
-
 .section-hero-one {
   display: flex;
   flex-direction: column;
@@ -44,4 +38,49 @@
   align-items: center;
   text-align: center;
   gap: 16px;
+}
+
+/* ***************************************About Section************************************** */
+.section-about {
+  padding-top: 9rem;
+}
+
+.about-img-box {
+  position: relative;
+  width: 600px; /* total area the collage takes up */
+  height: 450px;
+}
+
+.about-img {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.about-text-box {
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.about-img:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 450px;
+  z-index: 1;
+}
+
+.about-img:nth-child(2) {
+  top: 135px;
+  left: 300px;
+  width: 300px;
+  height: 315px;
+  z-index: 2;
+}
+
+/* ***************************************services Section************************************** */
+.section-services {
+  padding-top: 9.6rem;
 }

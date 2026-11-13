@@ -29,7 +29,7 @@ Bold: 700
 --- 02 COLORS
 
 
--Primary:oklch(48.8% 0.243 264.376)
+-Primary: #1447e6
 -Tints:  
 -Shades:oklch(54.6% 0.245 262.881), oklch(62.3% 0.214 259.815), oklch(70.7% 0.165 254.624)
 -Accents:
@@ -83,6 +83,8 @@ Bold: 700
 
 body {
   line-height: 1;
+  font-size: 18px;
+  line-height: 1.6;
   font-weight: 400;
   color: #343a40;
 }
@@ -102,13 +104,33 @@ body {
 }
 
 .h1-font-size {
-  font-size: 52px;
+  font-size: 64px;
   font-weight: 700;
+}
+
+.h2-font-size {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+
+.h3-font-size {
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .p-heading-font-size {
   font-size: 18px;
   line-height: 1.2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid {
@@ -167,7 +189,42 @@ make changes in the blank areas (btn) */
   opacity: 1;
 }
 
+.btn-dark {
+  display: inline-block;
+  padding: 15px 50px;
+  background-color: transparent;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  /* border-radius: 50px; */
+
+  text-decoration: none;
+  border: none;
+  /* border-bottom: 2px solid #1447e6; */
+
+  /* border-radius: rem; */
+  font-size: px or rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  /* box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25); */
+}
+
+.btn-dark:hover {
+  /* background-color: #1447e6;  */
+
+  border: solid #1447e6;
+  opacity: 1;
+}
+
 .btn-block {
   margin: auto;
   width: 50%;
+}
+
+.general-img {
+  width: 400px;
+  height: 450px;
+  border-radius: 5%;
+  justify-self: center;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
 }
