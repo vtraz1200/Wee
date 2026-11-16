@@ -231,3 +231,37 @@ make changes in the blank areas (btn) */
   justify-self: center;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
 }
+
+/* split-img (Areas for pairing img and text */
+.split-img-box {
+  position: relative;
+  width: 600px; /* total area the collage takes up */
+  height: 450px;
+}
+
+.split-img {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.about-text-box {
+  align-self: center;
+}
+
+.split-img:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 450px;
+  z-index: 1;
+}
+
+.split-img:nth-child(2) {
+  top: 135px;
+  left: 300px;
+  width: 300px;
+  height: 315px;
+  z-index: 2;
+}

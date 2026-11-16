@@ -25,9 +25,6 @@
 
 .hero {
   max-width: 1300px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 
@@ -36,48 +33,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 16px;
 }
 
 /* ***************************************About Section************************************** */
 .section-about {
   padding-top: 9rem;
-}
-
-.about-img-box {
-  position: relative;
-  width: 600px; /* total area the collage takes up */
-  height: 450px;
-}
-
-.about-img {
-  position: absolute;
-  object-fit: cover;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-}
-
-.about-text-box {
-  text-align: center;
-  align-self: center;
-  margin: 0 auto;
-}
-
-.about-img:nth-child(1) {
-  top: 0;
-  left: 0;
-  width: 360px;
-  height: 450px;
-  z-index: 1;
-}
-
-.about-img:nth-child(2) {
-  top: 135px;
-  left: 300px;
-  width: 300px;
-  height: 315px;
-  z-index: 2;
 }
 
 /* ***************************************Services Section************************************** */
@@ -100,6 +61,11 @@
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
 }
 
+/* ***************************************Service Areas Section************************************** */
+.section-service-areas {
+  padding-top: 9rem;
+}
+
 /* ***************************************Booking Section************************************** */
 
 .section-booking {
@@ -111,5 +77,137 @@
   background-position: ce;
 }
 
+/* ---------- <form class="index-form"> : the white form card ---------- */
+.index-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- <input> inside .index-form : each text box ---------- */
+.index-form input {
+  width: 100%;
+  padding: 12px;
+  background-color: #f1f3f5;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+}
+
 .booking-contact-info {
+}
+
+.booking-contact-form {
+}
+
+/* ***************************************Footer Section************************************** */
+
+/* ================================================================
+   FOOTER SKELETON — copy/paste template
+   Pairs with footer.html. Layout uses only grid and flex.
+   Every background starts white; add your own colors later.
+   ================================================================ */
+
+/* ---------- <footer class="site-footer"> : the whole footer ---------- */
+.section-footer {
+  background-color: #ffffff; /* footer background color */
+  border-top: 1px solid #dddddd; /* thin line separating the footer from the page above */
+}
+
+/* ---------- <div class="footer-inner"> : inner wrapper ---------- */
+.footer-inner {
+  padding-top: 48px; /* space above the columns */
+  padding-bottom: 0; /* removes the container's bottom space under the copyright bar */
+}
+
+/* ---------- <div class="footer-grid"> : the four columns ---------- */
+.site-footer .footer-grid {
+  margin-bottom: 0; /* removes the .grid class's large bottom margin */
+  padding-bottom: 32px; /* space between the columns and the bottom bar */
+}
+
+/* ---------- <div class="footer-col"> : one column ---------- */
+.footer-col {
+  display: flex; /* stacks the column's contents... */
+  flex-direction: column; /* ...from top to bottom */
+  gap: 12px; /* space between items inside the column */
+  background-color: #ffffff; /* column background color */
+}
+
+/* ---------- <h3 class="footer-heading"> : column heading ---------- */
+.footer-heading {
+  margin: 0 0 4px; /* small space below the heading */
+  font-size: 14px; /* text size */
+  font-weight: 700; /* bold */
+  text-transform: uppercase; /* shows the heading in capital letters */
+  color: #000000; /* text color */
+}
+
+/* ---------- <ul class="footer-links"> : list of links ---------- */
+.footer-links {
+  list-style: none; /* removes the bullet points */
+  margin: 0; /* removes the browser's default spacing */
+  padding: 0; /* removes the browser's default indent */
+  display: flex; /* stacks the links... */
+  flex-direction: column; /* ...from top to bottom */
+  gap: 10px; /* space between each link */
+}
+
+/* ---------- <a> inside .footer-links : each link ---------- */
+.footer-links a {
+  font-size: 14px; /* text size */
+  color: #333333; /* link color */
+  text-decoration: none; /* removes the link underline */
+}
+
+/* ---------- <ul class="footer-contact"> : address, phone, email ---------- */
+.footer-contact {
+  list-style: none; /* removes the bullet points */
+  margin: 0; /* removes the browser's default spacing */
+  padding: 0; /* removes the browser's default indent */
+  display: flex; /* stacks the contact rows... */
+  flex-direction: column; /* ...from top to bottom */
+  gap: 10px; /* space between each row */
+}
+
+/* ---------- <a> inside .footer-contact : each contact link ---------- */
+.footer-contact a {
+  font-size: 14px; /* text size */
+  line-height: 1.4; /* space between lines (the address takes 2 lines) */
+  color: #333333; /* link color */
+  text-decoration: none; /* removes the link underline */
+}
+
+/* ---------- <div class="footer-social"> : row of social links ---------- */
+.footer-social {
+  display: flex; /* puts the social links side by side in a row */
+  gap: 12px; /* space between each social link */
+}
+
+/* ---------- <a class="footer-social-link"> : one social link ---------- */
+.footer-social-link {
+  font-size: 14px; /* text size */
+  color: #333333; /* link color */
+  text-decoration: none; /* removes the link underline */
+}
+
+/* ---------- <div class="footer-bottom"> : copyright bar ---------- */
+.footer-bottom {
+  display: flex; /* lets us center the copyright text... */
+  justify-content: center; /* ...horizontally */
+  padding: 16px 0; /* space above and below the copyright text */
+  border-top: 1px solid #dddddd; /* thin line separating it from the columns */
+  background-color: #ffffff; /* bottom bar background color */
+}
+
+/* ---------- <p class="footer-copy"> : copyright text ---------- */
+.footer-copy {
+  margin: 0; /* removes the browser's default spacing */
+  font-size: 12px; /* text size */
+  color: #666666; /* text color */
 }

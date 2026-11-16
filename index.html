@@ -28,8 +28,8 @@
     />
 
     <!-- css files -->
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
     <!-- Javascript file -->
@@ -46,8 +46,8 @@
   <body>
     <header class="header"></header>
     <section class="section-hero">
-      <div class="hero">
-        <div class="section-hero-one">
+      <div class="grid grid--2--cols center-block hero">
+        <div class="section-hero-one text-center">
           <h1 class="font-white h1-font-size">
             Mobile Notary Services in Oakland County, MI
           </h1>
@@ -89,20 +89,20 @@
         quibusdam?
       </p>
       <div class="container grid grid--2--cols">
-        <div class="about-img-box">
+        <div class="split-img-box">
           <img
-            class="about-img"
+            class="split-img"
             src="images/stock-images/hero-1920.webp"
             alt=""
           />
           <img
-            class="about-img"
+            class="split-img"
             src="images/stock-images/hero-1920.webp"
             alt=""
           />
         </div>
 
-        <div class="about-text-box">
+        <div class="about-text-box text-center center-block">
           <h3 class="h3-font-size text-center">Lorem ipsum dolor sit a</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -180,11 +180,45 @@
         </div>
       </div>
     </section>
+    <section class="section-service-areas">
+      <h2 class="h2-font-size text-center">Service Areas</h2>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis
+        dicta, vitae est eaque dolores maiores atque eum ab vero voluptatum
+        facere numquam placeat deserunt inventore laboriosam sit consequuntur
+        quibusdam?
+      </p>
+      <div class="container grid grid--2--cols">
+        <div class="split-img-box">
+          <img
+            class="split-img"
+            src="images/stock-images/hero-1920.webp"
+            alt=""
+          />
+          <img
+            class="split-img"
+            src="images/stock-images/hero-1920.webp"
+            alt=""
+          />
+        </div>
+
+        <div class="about-text-box text-center center-block">
+          <h3 class="h3-font-size text-center">Lorem ipsum dolor sit a</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus quaerat earum repellendus labore recusandae voluptatum
+            iure ipsa aliquid incidunt, autem accusantium reprehenderit, totam
+            perspiciatis eligendi veritatis nulla amet natus qui!
+          </p>
+          <button class="btn-dark">fsef</button>
+        </div>
+      </div>
+    </section>
     <section class="section-booking">
       <h2 class="h2-font-size text-center font-white">
         Book Your Service Today
       </h2>
-      <div class="container">
+      <div class="container grid grid--2--cols">
         <div class="booking-contact-info">
           <h3 class="h3-font-size font-white">Reach out to us</h3>
           <p class="font-white">
@@ -192,9 +226,100 @@
           </p>
           <button class="btn">Reach Us Today</button>
         </div>
-        <div class="boooking-contact-form"></div>
+        <div class="boooking-contact-form">
+          <form class="index-form" action="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" />
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+            <label for="phonenumber">Phone number</label>
+            <input type="number" id="phonenumber" />
+          </form>
+        </div>
       </div>
     </section>
-    <section class="footer"></section>
+    <footer class="section-footer">
+      <!-- Inner wrapper: keeps the footer content from stretching too wide
+       on big screens and adds space around the edges. -->
+      <div class="container footer-inner">
+        <!-- The main grid: holds the four columns side by side. -->
+        <div class="grid grid--4--cols footer-grid">
+          <!-- COLUMN 1: brand. Business name, a short description, and a button. -->
+          <div class="footer-col footer-col--brand">
+            <!-- Business name -->
+            <p>Lorem Ipsum</p>
+            <!-- Short description of the business -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <!-- Call-to-action button (link it to your contact page) -->
+            <a href="#" class="">Lorem Ipsum</a>
+          </div>
+
+          <!-- COLUMN 2: a list of links (e.g. pages on the site). -->
+          <div class="footer-col">
+            <!-- Column heading -->
+            <h3 class="footer-heading">Lorem</h3>
+            <!-- The links. Add or remove <li> rows as needed. -->
+            <ul class="footer-links">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Dolor sit</a></li>
+              <li><a href="#">Amet consectetur</a></li>
+              <li><a href="#">Adipiscing</a></li>
+              <li><a href="#">Elit sed</a></li>
+            </ul>
+          </div>
+
+          <!-- COLUMN 3: a second list of links (e.g. services or products). -->
+          <div class="footer-col">
+            <!-- Column heading -->
+            <h3 class="">Ipsum</h3>
+            <!-- The links. Add or remove <li> rows as needed. -->
+            <ul class="footer-links">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Dolor sit</a></li>
+              <li><a href="#">Amet consectetur</a></li>
+              <li><a href="#">Adipiscing</a></li>
+              <li><a href="#">Elit sed</a></li>
+            </ul>
+          </div>
+
+          <!-- COLUMN 4: contact details and social links. -->
+          <div class="footer-col">
+            <!-- Column heading -->
+            <h3 class="">Dolor</h3>
+            <!-- Contact list: address, phone, email -->
+            <ul class="footer-contact">
+              <!-- Address (link it to Google Maps if you like) -->
+              <li>
+                <a href="#">123 Lorem St<br />Ipsum, ST 00000</a>
+              </li>
+              <!-- Phone number (use href="tel:+10000000000") -->
+              <li><a href="#">(000) 000-0000</a></li>
+              <!-- Email address (use href="mailto:you@example.com") -->
+              <li><a href="#">lorem@ipsum.com</a></li>
+            </ul>
+            <!-- Social media links in a row. Swap the text for icons later. -->
+            <div class="footer-social">
+              <a href="#" class="footer-social-link">Lorem</a>
+              <a href="#" class="footer-social-link">Ipsum</a>
+              <a href="#" class="footer-social-link">Dolor</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of the main grid -->
+
+        <!-- BOTTOM BAR: copyright line, under the columns. -->
+        <div class="footer-bottom">
+          <p class="footer-copy">
+            &copy; 2026 Lorem Ipsum. All rights reserved.
+          </p>
+        </div>
+      </div>
+      <!-- end of the inner wrapper -->
+    </footer>
   </body>
 </html>
