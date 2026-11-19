@@ -1,7 +1,96 @@
+/* ***************************************Header Section************************************** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  position: relative;
+  border-bottom: solid 1px #00000033;
+}
+
+.nav-logo-link {
+  font-size: 20px;
+  color: #333333;
+  text-decoration: none;
+}
+
+/*******************************************/
+/* NAVIGATION */
+/*******************************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.main-nav-link {
+  color: #333333;
+  font-weight: 200;
+  font-size: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Underline that grows on hover */
+.main-nav-link::after {
+  display: block;
+  content: "";
+  padding-bottom: 0.5rem;
+  border-bottom: solid 3px #1447e6;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.main-nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/*******************************************/
+/* MOBILE BUTTON (hidden until you add     */
+/* media rules to show it)                 */
+/*******************************************/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--nav-text-color);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/*******************************************/
+/* STICKY NAVIGATION */
+/* (body.sticky is toggled by nav.js)      */
+/*******************************************/
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: var(--nav-bg-sticky);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
 /* ***************************************Hero Section************************************** */
 
 .section-hero {
-  background-color: oklch(42.4% 0.199 265.638); /* full-width blue */
+  background-color: #f2f2f2; /* full-width blue */
   padding: 64px;
 }
 
