@@ -31,12 +31,12 @@ Bold: 700
 
 -Primary: #1447e6
 -Tints:  
--Shades:oklch(54.6% 0.245 262.881), oklch(62.3% 0.214 259.815), oklch(70.7% 0.165 254.624)
+-Shades:#155dfb, oklch(62.3% 0.214 259.815), oklch(70.7% 0.165 254.624)
 -Accents:
 -Greys:
 -Others:
 
--secondary: oklch(55.5% 0.163 48.998)
+-secondary:  #fa6a03
 
 
 --- 05 SHADOWS
@@ -103,6 +103,10 @@ body {
   overflow: hidden;
 }
 
+.font-blue {
+  color: #155dfb;
+}
+
 .font-white {
   color: #fff;
 }
@@ -163,45 +167,42 @@ body {
 /* Typical Button Design,
 make changes in the blank areas (btn) */
 
-.section-hero-btns {
-  display: flex;
-}
-
 .btn {
-  display: inline-block;
-  padding: 15px 50px;
+  display: inline-flex; /* lets us line up the icon and text */
+  align-items: center; /* centers the icon and text vertically */
+  justify-content: center; /* centers them horizontally in the button */
+  gap: 8px; /* space between icon and text */
+  white-space: nowrap; /* keeps the text on one line */
+  padding: 14px 20px;
   background-color: transparent;
-  color: #fff;
-  font-size: 20px;
+  color: #1447e6;
+  font-size: 18px;
   font-weight: 600;
-  /* border-radius: 50px; */
-
-  text-decoration: none;
+  border-radius: 5px;
   border: none;
-  border-bottom: 2px solid #fff;
-
-  /* border-radius: rem; */
-  font-size: px or rem;
+  background-image: linear-gradient(#1447e6, #1447e6);
+  background-size: 100% 3px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.5s;
-  /* box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25); */
 }
 
 .btn:hover {
-  border-bottom-color: #000; /* example: change the underline color on hover */
-
-  /* border: solid #fff; */
-  opacity: 1;
+  background-size: 100% 100%;
+  color: #fff;
 }
 
 .btn-dark {
   display: inline-block;
-  padding: 15px 50px;
+  padding: 20px 30px;
   background-color: transparent;
   color: #333;
-  font-size: 20px;
-  font-weight: 600;
-  /* border-radius: 50px; */
+  font-size: 18px;
+  /* font-weight: 600; */
+  border-radius: 50px;
+  border: solid 1px #000;
 
   text-decoration: none;
   border: none;
@@ -229,7 +230,7 @@ make changes in the blank areas (btn) */
 
 .general-img {
   width: 400px;
-  height: 450px;
+  height: 500px;
   border-radius: 5%;
   justify-self: center;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
@@ -267,4 +268,8 @@ make changes in the blank areas (btn) */
   width: 300px;
   height: 315px;
   z-index: 2;
+}
+
+.icon {
+  font-size: 22px;
 }

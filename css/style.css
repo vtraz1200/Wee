@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4rem;
+  padding: 0.8rem 4rem;
   position: relative;
   border-bottom: solid 1px #00000033;
 }
@@ -92,6 +92,7 @@
 .section-hero {
   background-color: #f2f2f2; /* full-width blue */
   padding: 64px;
+  border-bottom: solid 1px #00000033;
 }
 
 /* AI assisted Code ------------------------------------------------------- */
@@ -115,6 +116,26 @@
 .hero {
   max-width: 1300px;
   align-items: center;
+}
+
+.section-hero-btns {
+  gap: 1rem;
+}
+
+.section-hero-btns .btn:first-child {
+  background-color: #fa6a03;
+  background-image: none;
+  color: #fff;
+}
+
+.section-hero-btns .btn:first-child:hover {
+  background-color: #000;
+  color: #51a2ff;
+}
+
+.btn-dark:hover {
+  background-size: 100% 100%; /* grows to fill the button */
+  color: #fff;
 }
 
 .section-hero-one {
